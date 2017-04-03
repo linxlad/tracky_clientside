@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Tracksy - For independent and aspiring artists. Free music publishing platform.</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<!--[if lte IE 8]><script src="./assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="./assets/css/main.css" />
+		<link rel="icon" type="image/png" href="favicon-rocket.ico">
+		<!--[if lte IE 8]><link rel="stylesheet" href="./assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="./assets/css/ie9.css" /><![endif]-->
+	</head>
+	<body>
+
+		<!-- Header -->
+			<header id="header">
+				<h1>tracksy.</h1>
+				<p>An online platform for independent and aspiring artists to sell music.<br />
+				Take back control. Sign up today.</p>
+			</header>
+
+		<!-- Signup Form -->
+			<form id="signup-form" method="post">
+				<input type="email" name="email" id="email" placeholder="Email Address" v-model="email" />
+				<input type="submit" value="Sign Up" v-on:click="addInterest" v-bind:disabled="!isValid" />
+			</form>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<ul class="icons">
+					<li><a href="https://www.facebook.com/tracksy/" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+					<li><a href="https://www.instagram.com/theonlydanever_" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+					<li><a href="mailto:dan@dwqa.co" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+				</ul>
+				<ul class="copyright">
+					<li>&copy; tracksy.</li>
+				</ul>
+			</footer>
+
+		<!-- Scripts -->
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+		<script src="assets/js/main.js"></script>
+		<script src="https://unpkg.com/vue"></script>
+		<script src="./assets/js/early_access-vue.js"></script>
+	</body>
+</html>
